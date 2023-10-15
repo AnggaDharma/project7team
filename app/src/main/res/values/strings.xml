@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Tracking Masjid</string>
+    <string name="log_in">Log In</string>
+    <string name="ON">On</string>
+    <string name="OFF">Off</string>
+    <string name="Title">Ashar</string>
+    <string name="Title1">Masjid Terdekat</string>
+    <string name="Title2">15:00</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cari_lokasi_masjid">Cari lokasi masjid</string>
+    <string name="masid_istiqlal_merupakan_masjid_terbesar_di_indonesia_dan_asia_tenggara_masjid_ini_dibangun_untuk_memperingati_kemerdekaan_indonesia_masjid_nasional_app_layoutdescription">Masid Istiqlal merupakan masjid terbesar di Indonesia dan Asia Tenggara.Masjid ini dibangun untuk memperingati kemerdekaan Indonesia, masjid nasional app:layoutDescription=</string>
+    <string name="deskripsi">Deskripsi</string>
+</resources>

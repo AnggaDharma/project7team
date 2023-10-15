@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Hasil_Pencarian">
+
+    <ImageView
+        android:id="@+id/icon_hp"
+        android:layout_width="31dp"
+        android:layout_height="34dp"
+        android:src="@drawable/arrow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <EditText
+        android:id="@+id/ed_hp"
+        android:layout_width="375dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:background="@drawable/rectangle_black"
+        android:padding="8dp"
+        android:text="Hasil Pencarian"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icon_hp"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <ImageView
+        android:layout_width="29dp"
+        android:layout_height="21dp"
+        android:src="@drawable/lokasi_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.915"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.118" />
+
+    <ImageView
+        android:id="@+id/img_hp1"
+        android:layout_width="376dp"
+        android:layout_height="645dp"
+        android:src="@drawable/maps"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_hp"
+        app:layout_constraintVertical_bias="0.446" />
+
+    <ImageView
+        android:id="@+id/img_hp2"
+        android:layout_width="349dp"
+        android:layout_height="179dp"
+        android:layout_marginTop="24dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/rectangle_hp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/img_hp1" />
+
+    <ImageView
+        android:id="@+id/img_hp3"
+        android:layout_width="123dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="16dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/image12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/img_hp2"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="@+id/img_hp2"
+        app:layout_constraintTop_toTopOf="@+id/img_hp2"
+        app:layout_constraintVertical_bias="0.059"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_hp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="144dp"
+        android:text="Masjid Istiqlal"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/img_hp2"
+        app:layout_constraintEnd_toEndOf="@+id/img_hp2"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toEndOf="@+id/img_hp3"
+        app:layout_constraintTop_toTopOf="@+id/img_hp2"
+        app:layout_constraintVertical_bias="0.937" />
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/switch_button"
+        android:gravity="center"
+        android:text="Info Masjid"
+        app:layout_constraintBottom_toBottomOf="@+id/img_hp2"
+        app:layout_constraintEnd_toEndOf="@+id/img_hp2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/img_hp3"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hp1"
+        app:layout_constraintVertical_bias="0.146" />
+
+    <ImageView
+        android:id="@+id/img_hp4"
+        android:layout_width="349dp"
+        android:layout_height="179dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/rectangle_hp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_hp2" />
+
+    <ImageView
+        android:id="@+id/img_hp5"
+        android:layout_width="123dp"
+        android:layout_height="84dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/image12"
+        app:layout_constraintBottom_toBottomOf="@+id/img_hp4"
+        app:layout_constraintEnd_toEndOf="@+id/img_hp4"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="@+id/img_hp4"
+        app:layout_constraintTop_toBottomOf="@+id/img_hp2"
+        app:layout_constraintVertical_bias="0.357"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_hp3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="144dp"
+        android:text="Masjid Istiqlal"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/img_hp4"
+        app:layout_constraintEnd_toEndOf="@+id/img_hp4"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toEndOf="@+id/img_hp5"
+        app:layout_constraintTop_toTopOf="@+id/img_hp4"
+        app:layout_constraintVertical_bias="0.937" />
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="96dp"
+        android:background="@drawable/switch_button"
+        android:gravity="center"
+        android:text="Info Masjid"
+        app:layout_constraintBottom_toBottomOf="@+id/img_hp4"
+        app:layout_constraintEnd_toEndOf="@+id/img_hp4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/img_hp5"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hp3"
+        app:layout_constraintVertical_bias="0.318" />
+
+    <ImageView
+        android:id="@+id/img_hp6"
+        android:layout_width="349dp"
+        android:layout_height="179dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/rectangle_hp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_hp1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_hp4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/img_hp7"
+        android:layout_width="123dp"
+        android:layout_height="84dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/image12"
+
+        app:layout_constraintBottom_toBottomOf="@+id/img_hp6"
+        app:layout_constraintEnd_toEndOf="@+id/img_hp6"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="@+id/img_hp6"
+        app:layout_constraintTop_toBottomOf="@+id/img_hp4"
+        app:layout_constraintVertical_bias="0.343"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_hp4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Masjid Istiqlal"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/img_hp6"
+        app:layout_constraintEnd_toEndOf="@+id/img_hp6"
+        app:layout_constraintHorizontal_bias="0.184"
+        app:layout_constraintStart_toEndOf="@+id/img_hp7"
+        app:layout_constraintTop_toBottomOf="@+id/img_hp4"
+        app:layout_constraintVertical_bias="0.013" />
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="28dp"
+        android:background="@drawable/switch_button"
+        android:gravity="center"
+        android:text="Info Masjid"
+
+        app:layout_constraintBottom_toBottomOf="@+id/img_hp6"
+        app:layout_constraintEnd_toEndOf="@+id/img_hp6"
+        app:layout_constraintHorizontal_bias="0.914"
+        app:layout_constraintStart_toEndOf="@+id/img_hp7"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hp4"
+        app:layout_constraintVertical_bias="0.14" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

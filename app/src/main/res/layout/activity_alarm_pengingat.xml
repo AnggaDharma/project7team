@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AlarmPengingat">
+
+
+        <ImageView
+            android:id="@+id/bg_alarm"
+            android:layout_width="414dp"
+            android:layout_height="304dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/backgroundmasjid"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+
+        <ImageView
+            android:id="@+id/icon_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/angle_small_left"
+            app:layout_constraintBottom_toBottomOf="@+id/bg_alarm"
+            app:layout_constraintEnd_toStartOf="@+id/tv_alarm"
+            app:layout_constraintHorizontal_bias="0.608"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.392" />
+
+        <ImageView
+            android:id="@+id/icon_alarm2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/angle_small_right"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.386"
+            app:layout_constraintStart_toEndOf="@+id/tv_alarm"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.127" />
+
+        <ImageView
+            android:id="@+id/icon_alarm3"
+            android:layout_width="44dp"
+            android:layout_height="42dp"
+            android:src="@drawable/arrow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.043"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/bg_alarm"
+            app:layout_constraintVertical_bias="0.019" />
+
+        <TextView
+            android:id="@+id/tv_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Wednesday 20 june 2023"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/bg_alarm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/bg_alarm"
+            app:layout_constraintVertical_bias="0.375"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/rectangle_alarm"
+            android:layout_width="336dp"
+            android:layout_height="561dp"
+            android:layout_marginTop="68dp"
+            android:foregroundGravity="center"
+            android:src="@drawable/rectangle_alarm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_alarm"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_alarm1"
+            android:layout_width="69dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="35dp"
+            android:text="Shubuh"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.251"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/rectangle_alarm"
+            app:layout_constraintVertical_bias="0.093"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_alarm2"
+            android:layout_width="69dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="35dp"
+            android:text="Dzuhur"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.251"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_alarm1"
+            app:layout_constraintVertical_bias="0.012"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_alarm3"
+            android:layout_width="69dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="35dp"
+            android:text="Azhar"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.251"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_alarm1"
+            app:layout_constraintVertical_bias="0.127"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_alarm4"
+            android:layout_width="69dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="35dp"
+            android:text="Magrib"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_alarm3"
+            app:layout_constraintVertical_bias="0.01"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/tv_alarm5"
+            android:layout_width="69dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="35dp"
+            android:text="Isya"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_alarm4"
+            app:layout_constraintVertical_bias="0.007"
+            tools:ignore="MissingConstraints" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_btn1"
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="144dp"
+            android:background="@drawable/switch_tumbs"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.665"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_alarm"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/tv_on1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/switch_button"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="5dp"
+                android:text="@string/ON"
+                android:textAlignment="center"
+                android:textColor="@color/textColor"
+                android:textSize="16sp"
+                android:textStyle="bold|normal" />
+
+            <TextView
+                android:id="@+id/tv_off1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="5dp"
+                android:text="@string/OFF"
+                android:textAlignment="center"
+                android:textColor="@color/greenColor"
+                android:textSize="16sp"
+                android:textStyle="bold|normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_btn2"
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/switch_tumbs"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toEndOf="@+id/tv_alarm2"
+            app:layout_constraintTop_toBottomOf="@+id/ll_btn1"
+            tools:ignore="MissingConstraints,UnknownId">
+
+            <TextView
+                android:id="@+id/tv_on2"
+                android:layout_width="7dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/switch_button"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="5dp"
+                android:text="@string/ON"
+                android:textAlignment="center"
+                android:textColor="@color/textColor"
+                android:textSize="16sp"
+                android:textStyle="bold|normal" />
+
+            <TextView
+                android:id="@+id/tv_off2"
+                android:layout_width="7dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="5dp"
+                android:text="@string/OFF"
+                android:textAlignment="center"
+                android:textColor="@color/greenColor"
+                android:textSize="16sp"
+                android:textStyle="bold|normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_btn3"
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/switch_tumbs"
+            android:gravity="center"
+            android:weightSum="2"
+            app:layout_constraintStart_toEndOf="@+id/tv_alarm3"
+            app:layout_constraintTop_toBottomOf="@+id/ll_btn2"
+            tools:ignore="MissingConstraints">
+
+
+            <TextView
+                android:id="@+id/tv_off3"
+                android:layout_width="7dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="5dp"
+                android:text="@string/OFF"
+                android:textAlignment="center"
+                android:textColor="@color/greenColor"
+                android:textSize="16sp"
+                android:textStyle="bold|normal" />
+
+            <TextView
+                android:id="@+id/tv_on3"
+                android:layout_width="7dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/switch_button"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="5dp"
+                android:text="@string/ON"
+                android:textAlignment="center"
+                android:textColor="@color/textColor"
+                android:textSize="16sp"
+                android:textStyle="bold|normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_btn4"
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/switch_tumbs"
+            android:gravity="center"
+            android:weightSum="2"
+            app:layout_constraintStart_toEndOf="@+id/tv_alarm4"
+            app:layout_constraintTop_toBottomOf="@+id/ll_btn3"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/tv_on4"
+                android:layout_width="66dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/switch_button"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="5dp"
+                android:text="@string/ON"
+                android:textAlignment="center"
+                android:textColor="@color/textColor"
+                android:textSize="16sp"
+                android:textStyle="bold|normal" />
+
+            <TextView
+                android:id="@+id/tv_off4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="5dp"
+                android:text="@string/OFF"
+                android:textAlignment="center"
+                android:textColor="@color/greenColor"
+                android:textSize="16sp"
+                android:textStyle="bold|normal" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_btn5"
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/switch_tumbs"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:layout_constraintStart_toEndOf="@+id/tv_alarm5"
+            app:layout_constraintTop_toBottomOf="@+id/ll_btn4"
+            tools:ignore="MissingConstraints">
+
+
+            <TextView
+                android:id="@+id/tv_on5"
+                android:layout_width="66dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/switch_button"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="5dp"
+                android:text="@string/ON"
+                android:textAlignment="center"
+                android:textColor="@color/textColor"
+                android:textSize="16sp"
+                android:textStyle="bold|normal" />
+
+            <TextView
+                android:id="@+id/tv_off5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="5dp"
+                android:text="@string/OFF"
+                android:textAlignment="center"
+                android:textColor="@color/greenColor"
+                android:textSize="16sp"
+                android:textStyle="bold|normal" />
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

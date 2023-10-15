@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="data_name">
+        <item>Masjid istiqlal</item>
+        <item>masjid al-hilal</item>
+        <item>masjid al-ikhlas</item>
+        <item>masjid at_tawwab</item>
+
+    </string-array>
+
+    <string-array name="data_description">
+        <item>Masid Istiqlal merupakan masjid terbesar di Indonesia dan Asia Tenggara. Masjid ini dibangun untuk memperingati kemerdekaan Indonesia, masjid nasional Indonesia ini diberi nama "Istiqlal", kata bahasa Arab untuk "kemerdekaan". Masjid ini memiliki luas bangunan hingga 24.20 meter persegi dan berdiri di atas tanah seluas 98.247 meter persegi.</item>
+        <item>deskripsi belum ditambhakan.</item>
+        <item>sebuah tempat ibadah yang berada di sekitaran area perkantoran.</item>
+        <item>Masjid At-tawwab merupakan tempat ibadah untuk kaum muslim yang di bangun oleh warga sekitar di daerah Bojong gede kabupaten bogor . </item>
+    </string-array>
+</resources>
