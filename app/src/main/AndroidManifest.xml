@@ -13,13 +13,13 @@
         android:theme="@style/Theme.TrackingMasjid"
         tools:targetApi="31">
         <activity
-            android:name=".Beranda"
+            android:name=".BerandaActivity"
             android:exported="false" />
         <activity
-            android:name=".ZakatProfesi"
+            android:name=".ZakatProfesiActivity"
             android:exported="false" />
         <activity
-            android:name=".ZakatFitrah"
+            android:name=".ZakatFitrahActivity"
             android:exported="false" />
         <activity
             android:name=".Kegiatan"
@@ -40,7 +40,7 @@
             android:name=".Hasil_Pencarian"
             android:exported="false" />
         <activity
-            android:name=".AlarmPengingat"
+            android:name=".AlarmActivity"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
@@ -49,10 +49,10 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".Donasi"
+            android:name=".DonasiActivity"
             android:exported="false" />
         <activity
-            android:name=".zakat"
+            android:name=".ZakatActivity"
             android:exported="false" />
         <activity
             android:name=".SplashScreen"
