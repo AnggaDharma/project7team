@@ -49,13 +49,13 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".SplashScreen"
+            android:name=".Donasi"
             android:exported="false" />
         <activity
             android:name=".zakat"
             android:exported="false" />
         <activity
-            android:name=".Donasi"
+            android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
