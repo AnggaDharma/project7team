@@ -1,18 +1,18 @@
-package com.example.trackingmasjid.adapter
+package com.example.trackingmasjid.Adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.trackingmasjid.databinding.ItemMasjidBinding
-import com.example.trackingmasjid.Models.MasjidModel
+import com.example.trackingmasjid.databinding.ViewRecycleBinding
+import com.example.trackingmasjid.Model.RvMasjidModel
 
-class RvMasjidAdapter(private val list: List<MasjidModel>) :
+class RvMasjidAdapter(private val list: List<RvMasjidModel>) :
     RecyclerView.Adapter<RvMasjidAdapter.ViewHolder>() {
 
-    class ViewHolder(val binding: ItemMasjidBinding) : RecyclerView.ViewHolder(binding.root)
+    class ViewHolder(val binding: ViewRecycleBinding) : RecyclerView.ViewHolder(binding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val binding = ItemMasjidBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding =  ViewRecycleBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ViewHolder(binding)
     }
 
@@ -23,7 +23,7 @@ class RvMasjidAdapter(private val list: List<MasjidModel>) :
             with(list[position]) {
                 binding.ivMasjid.setImageResource(this.image)
                 binding.tvMasjid.text = this.name
-                binding.tvDesc.text = this.desc
+                binding.tvJarak.text = this.desc
             }
         }
     }

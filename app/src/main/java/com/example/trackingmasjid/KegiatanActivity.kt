@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.widget.CalendarView
 import android.widget.Toast
 
-class Kegiatan : AppCompatActivity() {
+class KegiatanActivity : AppCompatActivity() {
 
     private lateinit var calendarView: CalendarView
     override fun onCreate(savedInstanceState: Bundle?) {
