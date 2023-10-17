@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/greenColor"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/gambartasbih"
+        android:contentDescription="Tasbih Icon" />
+
+    <TextView
+        android:id="@+id/countTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="48sp" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Hitung"
+        android:id="@+id/increaseButton"
+        android:onClick="incrementCount"
+        android:background="@drawable/rounded_button"
+        android:stateListAnimator="@null"
+        android:scaleX="1.05"
+        android:scaleY="1.05" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Reset"
+        android:id="@+id/resetButton"
+        android:onClick="resetCount"
+        android:background="@drawable/rounded_button"
+        android:stateListAnimator="@null"
+        android:scaleX="1.05"
+        android:scaleY="1.05" />
+</LinearLayout>

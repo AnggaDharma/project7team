@@ -3,9 +3,9 @@ package com.example.trackingmasjid
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class Maps : AppCompatActivity() {
+class ZakatProfesiActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_maps)
+        setContentView(R.layout.activity_zakat_profesi)
     }
 }

@@ -13,7 +13,7 @@
         android:theme="@style/Theme.TrackingMasjid"
         tools:targetApi="31">
         <activity
-            android:name=".Donasi"
+            android:name=".Beranda"
             android:exported="false" />
         <activity
             android:name=".ZakatProfesi"
@@ -22,7 +22,7 @@
             android:name=".ZakatFitrah"
             android:exported="false" />
         <activity
-            android:name=".Beranda"
+            android:name=".Kegiatan"
             android:exported="false" />
         <activity
             android:name=".Ulasan"
@@ -55,7 +55,7 @@
             android:name=".zakat"
             android:exported="false" />
         <activity
-            android:name=".Kegiatan"
+            android:name=".Donasi"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
