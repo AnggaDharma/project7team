@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.content.res.TypedArray
 import android.util.Log
+import android.widget.EditText
 import android.widget.ImageView
 import android.widget.LinearLayout
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -30,6 +31,12 @@ class BerandaActivity : AppCompatActivity() {
         val donasiview = findViewById<ImageView>(R.id.donasi)
         donasiview.setOnClickListener {
             val intent = Intent(this@BerandaActivity, DonasiActivity::class.java)
+            startActivity(intent)
+        }
+
+        val search = findViewById<EditText>(R.id.editTextSearch)
+        search.setOnClickListener {
+            val intent = Intent(this@BerandaActivity, MapsActivity::class.java)
             startActivity(intent)
         }
 
