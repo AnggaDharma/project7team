@@ -36,197 +36,142 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/tv_zakat_Fitrah2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Pendapatan Bulanan"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.072"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/imageView"
-            app:layout_constraintVertical_bias="0.055" />
-
-        <EditText
-            android:id="@+id/ed_zakat_Fitrah1"
-            android:layout_width="363dp"
-            android:layout_height="56dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:background="@drawable/switch_tumbs"
-            android:padding="10dp"
-            android:text="Rp."
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_zakat_Fitrah2"
-            app:layout_constraintVertical_bias="0.018" />
-
-        <TextView
-            android:id="@+id/tv_zakat_Fitrah3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Pengeluaran Bulanan"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.084"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/ed_zakat_Fitrah1"
-            app:layout_constraintVertical_bias="0.106" />
-
-        <EditText
-            android:id="@+id/ed_zakat_Fitrah2"
-            android:layout_width="363dp"
-            android:layout_height="56dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:background="@drawable/switch_tumbs"
-            android:padding="10dp"
-            android:text="Rp."
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_zakat_Fitrah3"
-            app:layout_constraintVertical_bias="0.018" />
-
-        <TextView
-            android:id="@+id/tv_zakat_Fitrah4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:text="Hutang"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.048"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ed_zakat_Fitrah2"
-            tools:ignore="MissingConstraints" />
-
-        <EditText
-            android:id="@+id/ed_zakat_Fitrah3"
-            android:layout_width="363dp"
-            android:layout_height="56dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:background="@drawable/switch_tumbs"
-            android:padding="10dp"
-            android:text="Rp."
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_zakat_Fitrah4"
-            app:layout_constraintVertical_bias="0.018" />
-
-        <TextView
-            android:id="@+id/tv_zakat_Fitrah5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:text="Harga Beras"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.048"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ed_zakat_Fitrah3"
-            tools:ignore="MissingConstraints" />
-
-        <EditText
-            android:id="@+id/ed_zakat_Fitrah4"
-            android:layout_width="363dp"
-            android:layout_height="56dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:background="@drawable/switch_tumbs"
-            android:padding="10dp"
-            android:text="Rp."
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_zakat_Fitrah5"
-            app:layout_constraintVertical_bias="0.018" />
-
-
-        <CheckBox
-            android:id="@+id/checkBox1"
-            android:layout_width="72dp"
-            android:layout_height="49dp"
-            android:text="/Kg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.065"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ed_zakat_Fitrah4"
-            app:layout_constraintVertical_bias="0.0"
-            tools:ignore="MissingConstraints" />
-
-        <CheckBox
-            android:id="@+id/checkBox2"
-            android:layout_width="90dp"
-            android:layout_height="50dp"
-            android:text="/Liter"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.08"
-            app:layout_constraintStart_toEndOf="@+id/checkBox1"
-            app:layout_constraintTop_toBottomOf="@+id/ed_zakat_Fitrah4"
-            app:layout_constraintVertical_bias="0.0"
-            tools:ignore="MissingConstraints" />
-
-        <Button
-            android:id="@+id/btn_hitung"
-            android:layout_width="165dp"
-            android:layout_height="53dp"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="56dp"
+            android:orientation="vertical"
             android:gravity="center"
-            android:text="Hitung"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.609"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/checkBox2"
-            app:layout_constraintVertical_bias="0.081" />
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintTop_toTopOf="@+id/imageView"
+            tools:layout_editor_absoluteX="26dp">
 
-        <TextView
-            android:id="@+id/tv_zakat_Fitrah6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Jumlah"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.064"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/btn_hitung"
-            app:layout_constraintVertical_bias="0.274" />
+            <TextView
+                android:id="@+id/tv_zakat_Fitrah2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pendapatan Bulanan"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/ed_zakat_Fitrah5"
-            android:layout_width="363dp"
-            android:layout_height="56dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:background="@drawable/switch_tumbs"
-            android:padding="10dp"
-            android:text="Rp."
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_zakat_Fitrah6"
-            app:layout_constraintVertical_bias="0.178" />
+            <EditText
+                android:id="@+id/ed_zakat_Fitrah1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/switch_tumbs"
+                android:hint="Rp."
+                android:padding="10dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_zakat_Fitrah3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pengeluaran Bulanan"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/ed_zakat_Fitrah2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/switch_tumbs"
+                android:hint="Rp."
+                android:padding="10dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_zakat_Fitrah4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Hutang"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/ed_zakat_Fitrah3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/switch_tumbs"
+                android:hint="Rp."
+                android:padding="10dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_zakat_Fitrah5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Harga Beras"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/ed_zakat_Fitrah4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/switch_tumbs"
+                android:hint="Rp."
+                android:padding="10dp"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/checkBox2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/Liter"
+                    tools:ignore="MissingConstraints" />
+
+                <CheckBox
+                    android:id="@+id/checkBox1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/Kg"
+                    tools:ignore="MissingConstraints" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_hitung"
+                android:layout_width="165dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="Hitung"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_zakat_Fitrah6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jumlah"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/ed_zakat_Fitrah5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/switch_tumbs"
+                android:hint="Rp."
+                android:padding="10dp"
+                android:textSize="20sp" />
+        </LinearLayout>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
