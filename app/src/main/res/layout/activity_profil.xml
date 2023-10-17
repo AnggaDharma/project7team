@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilActivity">
+
+
+    <ImageView
+        android:id="@+id/bg_profile"
+        android:layout_width="414dp"
+        android:layout_height="268dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_profil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="76dp"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bg_profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.071"
+        app:srcCompat="@drawable/backarrow" />
+
+    <ImageView
+        android:id="@+id/img_profile"
+        android:layout_width="155dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="136dp"
+        android:src="@drawable/icon_profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_back"
+        tools:ignore="MissingConstraints" />
+
+
+    <LinearLayout
+        android:id="@+id/lL_name"
+        android:layout_width="388dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_profile">
+
+        <ImageView
+            android:id="@+id/img_user"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/user" />
+
+        <TextView
+            android:id="@+id/tv_nama"
+            android:layout_width="287dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="15dp"
+            android:paddingBottom="10dp"
+            android:padding="12dp"
+            android:layout_weight="1"
+            android:text="Dadang Sunandar"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bio"
+        android:layout_width="388dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.695"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lL_name">
+
+        <ImageView
+            android:id="@+id/img_bio"
+            android:layout_width="62dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/bio" />
+
+        <TextView
+            android:id="@+id/tv_bio"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:text="dadangs113@gmail.com"
+            android:textSize="20sp"
+            android:layout_height="58dp"
+            android:layout_marginTop="15dp"
+            android:paddingBottom="10dp"
+            android:padding="12dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_telpon"
+        android:layout_width="388dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="28dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.695"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_bio">
+
+        <ImageView
+            android:id="@+id/img_telpon"
+            android:layout_width="62dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/tlpn" />
+
+        <TextView
+            android:id="@+id/tv_telpon"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:text="0897998877"
+            android:textSize="20sp"
+            android:layout_height="58dp"
+            android:layout_marginTop="15dp"
+            android:paddingBottom="10dp"
+            android:padding="12dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Btn_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="112dp"
+        android:text="Logout"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_telpon" />
+
+    <Button
+        android:id="@+id/btn_editprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Profile"
+        app:layout_constraintBottom_toTopOf="@+id/lL_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.884"
+        app:layout_constraintStart_toEndOf="@+id/img_profile"
+        app:layout_constraintTop_toBottomOf="@+id/bg_profile"
+        app:layout_constraintVertical_bias="0.225" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
