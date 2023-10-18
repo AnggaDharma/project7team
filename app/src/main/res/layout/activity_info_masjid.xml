@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".InfoMasjid"
-    tools:ignore="ExtraText">
+    tools:context=".InfoMasjid">
 
     <ImageView
         android:id="@+id/img_info1"
@@ -17,163 +16,139 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="407dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="4dp"
-        android:orientation="horizontal"
-        android:padding="10dp"
-        android:layout_marginStart="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/img_info1"
-        tools:ignore="MissingConstraints">
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_deskripsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/deskripsi"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_fasilitas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Fasilitas"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_info_Kegiatan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Kegiatan"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_Ulasan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ulasan"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
 
         <TextView
-            android:id="@+id/tv_deskripsi"
+            android:id="@+id/tv_info6"
+            android:layout_width="match_parent"
+            android:layout_margin="15dp"
+            android:layout_height="143dp"
+            android:text="Masid Istiqlal merupakan masjid terbesar di Indonesia dan Asia Tenggara. Masjid ini dibangun untuk memperingati kemerdekaan Indonesia, masjid nasional Indonesia ini diberi nama Istiqlal, kata bahasa Arab untuk kemerdekaan. Masjid ini memiliki luas bangunan hingga 24.20 meter persegi dan berdiri di atas tanah seluas 98.247 meter persegi."
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_kontak"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/deskripsi"
-            android:textSize="14sp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="Kontak Kami"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/tv_fasilitas"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Fasilitas"
-            android:textSize="14sp" />
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="346dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/tv_info_Kegiatan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Kegiatan"
-            android:textSize="14sp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/person" />
 
-        <TextView
-            android:id="@+id/tv_Ulasan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Ulasan"
-            android:textSize="14sp" />
+            <TextView
+                android:id="@+id/tv_person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=": bpk.Ruslan" />
+        </LinearLayout>
 
-        <TextView
-            android:id="@+id/tv_Donasi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Donasi"
-            android:textSize="14sp" />
-    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="346dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="16dp"
+            android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/tv_info6"
-        android:layout_width="383dp"
-        android:layout_height="143dp"
-        android:text="Masid Istiqlal merupakan masjid terbesar di Indonesia
-dan Asia Tenggara. Masjid ini dibangun untuk
-memperingati kemerdekaan Indonesia, masjid nasional Indonesia ini diberi nama Istiqlal, kata bahasa Arab untuk kemerdekaan. Masjid ini memiliki luas bangunan hingga 24.20 meter persegi dan berdiri
-di atas tanah seluas 98.247 meter persegi."
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.571"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-        app:layout_constraintVertical_bias="0.074"
-        tools:ignore="MissingConstraints" />"
-        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView5" 24.20 meter persegi dan berdiri di tanah seluas 98.247 meter persegi."
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView5"
-         />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/call" />
 
-    <TextView
-        android:id="@+id/tv_kontak"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
-        android:text="Kontak Kami"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_info6" />
+            <TextView
+                android:id="@+id/tv_call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=": +62812xxxx" />
 
-    <LinearLayout
-        android:id="@+id/linearLayout3"
-        android:layout_width="346dp"
-        android:layout_height="26dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="12dp"
-        android:orientation="horizontal"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_kontak">
+        </LinearLayout>
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/person" />
+        <LinearLayout
+            android:layout_width="346dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="16dp"
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/tv_person"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text=": bpk.Ruslan" />
-    </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mail" />
 
-    <LinearLayout
-        android:id="@+id/linearLayout4"
-        android:layout_width="346dp"
-        android:layout_height="26dp"
-        android:layout_marginStart="16dp"
-        android:orientation="horizontal"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+            <TextView
+                android:id="@+id/tv_mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=": masjid@gmail.com" />
+        </LinearLayout>
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/call" />
-
-        <TextView
-            android:id="@+id/tv_call"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text=": +62812xxxx" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="346dp"
-        android:layout_height="26dp"
-        android:layout_marginStart="16dp"
-        android:orientation="horizontal"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/mail" />
-
-        <TextView
-            android:id="@+id/tv_mail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text=": masjid@gmail.com" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

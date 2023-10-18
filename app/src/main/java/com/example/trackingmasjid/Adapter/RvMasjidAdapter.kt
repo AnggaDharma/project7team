@@ -6,7 +6,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.trackingmasjid.databinding.ViewRecycleBinding
 import com.example.trackingmasjid.Model.RvMasjidModel
 
-class RvMasjidAdapter(private val list: List<RvMasjidModel>) :
+class RvMasjidAdapter(private val list: List<RvMasjidModel>,
+                      private val onItemClick: (RvMasjidModel) -> Unit) :
     RecyclerView.Adapter<RvMasjidAdapter.ViewHolder>() {
 
     class ViewHolder(val binding: ViewRecycleBinding) : RecyclerView.ViewHolder(binding.root)
@@ -24,6 +25,10 @@ class RvMasjidAdapter(private val list: List<RvMasjidModel>) :
                 binding.ivMasjid.setImageResource(this.image)
                 binding.tvMasjid.text = this.name
                 binding.tvJarak.text = this.desc
+
+                itemView.setOnClickListener {
+                    onItemClick(this)
+                }
             }
         }
     }
