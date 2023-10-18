@@ -57,6 +57,12 @@ class BerandaActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val profile = findViewById<ImageView>(R.id.profile)
+        profile.setOnClickListener {
+            val intent = Intent(this@BerandaActivity, ProfilActivity::class.java)
+            startActivity(intent)
+        }
+
 
 
         init()
