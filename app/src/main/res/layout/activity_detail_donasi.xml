@@ -12,8 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="400dp"
         android:background="@color/abu_abu"
-        android:orientation="vertical"
-        tools:ignore="MissingConstraints">
+        app:layout_constraintBottom_toTopOf="@+id/bbb"
+        android:orientation="vertical">
 
         <ImageView
             android:id="@+id/conten_donasi1"
@@ -57,51 +57,52 @@
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:text="Cerita penggalangan Dana "
-        android:textSize="15dp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout7" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="5dp"
-        android:text="20 Agustus 2023"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:text="Halo #Hamba Allah\n\nDalam atmosfer kepedulian dan kasih sayang, kami mengajak Anda untuk berbagi dalam kampanye
-        Raih Istana Disurga : Mari Sempurnakan Masjid penghafal Qur’an'. Kami paham bahwa tak semua Pengahafal Qur”an mendapatkan kesempatan untuk merasakan Fasilitas Masjid yang Nyaman untuk Proses mengafalkan Qur’an agar lebih nyaman . Oleh karena itu, kami ingin menghadirkan kebahagiaan ini kepada mereka yang mungkin belum pernah mengalaminya."
+    <LinearLayout
+        android:id="@+id/bbb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="400dp"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintStart_toStartOf="parent">
 
-    <TextView
-        android:id="@+id/tv_buttondonasi"
-        android:layout_width="206dp"
-        android:layout_height="55dp"
-        android:layout_gravity="center"
-        android:background="@drawable/button_info"
-        android:gravity="center"
-        android:text="Donasi"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="111dp"
-        tools:layout_editor_absoluteY="636dp"
-        tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Cerita penggalangan Dana "
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="20 Agustus 2023" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Assalamualaikum Wr Wb\n\nDalam atmosfer kepedulian dan kasih sayang, kami mengajak Anda untuk berbagi dalam kampanye Raih Istana Disurga : Mari Sempurnakan Masjid penghafal Qur’an'. Kami paham bahwa tak semua Pengahafal Qur”an mendapatkan kesempatan untuk merasakan Fasilitas Masjid yang Nyaman untuk Proses mengafalkan Qur’an agar lebih nyaman . Oleh karena itu, kami ingin menghadirkan kebahagiaan ini kepada mereka yang mungkin belum pernah mengalaminya." />
+
+        <TextView
+            android:id="@+id/tv_buttondonasi"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_info"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Donasi"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
 
     <!--    <TextView-->
 <!--        android:id="@+id/tv_buttonfasilitas"-->
