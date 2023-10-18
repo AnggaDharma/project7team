@@ -27,7 +27,7 @@
             android:id="@+id/tv_zakat_Fitrah"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Zakat Fitrah"
+            android:text="Zakat Profesi"
             android:textColor="@color/white"
             android:textSize="40sp"
             android:textStyle="bold"

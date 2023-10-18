@@ -14,6 +14,30 @@ class KegiatanActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_kegiatan)
 
+        val deskripsiview = findViewById<TextView>(R.id.tv_deskripsi)
+        deskripsiview.setOnClickListener {
+            val intent = Intent(this@KegiatanActivity, InfoMasjid::class.java)
+            startActivity(intent)
+        }
+
+        val fasilitasview = findViewById<TextView>(R.id.tv_fasilitas)
+        fasilitasview.setOnClickListener {
+            val intent = Intent(this@KegiatanActivity, Fasilitas::class.java)
+            startActivity(intent)
+        }
+
+        val kegiatanview = findViewById<TextView>(R.id.tv_info_Kegiatan)
+        kegiatanview.setOnClickListener {
+            val intent = Intent(this@KegiatanActivity, KegiatanActivity::class.java)
+            startActivity(intent)
+        }
+
+        val ulasanview = findViewById<TextView>(R.id.tv_Ulasan)
+        ulasanview.setOnClickListener {
+            val intent = Intent(this@KegiatanActivity, Ulasan::class.java)
+            startActivity(intent)
+        }
+
         val calendarView = findViewById<CalendarView>(R.id.calender)
         calendarView.setOnDateChangeListener { _, year, month, dayOfMonth ->
             // Lakukan sesuatu dengan tanggal yang dipilih

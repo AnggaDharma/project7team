@@ -10,22 +10,28 @@ class Fasilitas : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fasilitas)
 
-        val ulasanTextView = findViewById<TextView>(R.id.tv_Ulasan)
-        ulasanTextView.setOnClickListener {
-            val intent = Intent(this@Fasilitas, Ulasan::class.java)
+        val deskripsiview = findViewById<TextView>(R.id.tv_deskripsi)
+        deskripsiview.setOnClickListener {
+            val intent = Intent(this@Fasilitas, InfoMasjid::class.java)
             startActivity(intent)
         }
 
-        val kegiatantextview = findViewById<TextView>(R.id.tv_info_Kegiatan)
-        kegiatantextview.setOnClickListener {
+        val fasilitasview = findViewById<TextView>(R.id.tv_fasilitas)
+        fasilitasview.setOnClickListener {
+            val intent = Intent(this@Fasilitas, Fasilitas::class.java)
+            startActivity(intent)
+        }
+
+        val kegiatanview = findViewById<TextView>(R.id.tv_info_Kegiatan)
+        kegiatanview.setOnClickListener {
             val intent = Intent(this@Fasilitas, KegiatanActivity::class.java)
             startActivity(intent)
         }
-        val deskripsitextview = findViewById<TextView>(R.id.tv_deskripsi)
-        deskripsitextview.setOnClickListener {
-            val intent = Intent(this@Fasilitas, InfoMasjid::class.java)
-            startActivity(intent)
 
+        val ulasanview = findViewById<TextView>(R.id.tv_Ulasan)
+        ulasanview.setOnClickListener {
+            val intent = Intent(this@Fasilitas, Ulasan::class.java)
+            startActivity(intent)
         }
     }
 }

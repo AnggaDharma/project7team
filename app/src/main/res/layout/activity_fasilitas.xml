@@ -17,82 +17,77 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="407dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="4dp"
-        android:orientation="horizontal"
-        android:padding="10dp"
-        android:layout_marginStart="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/img_info1"
-        tools:ignore="MissingConstraints">
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_deskripsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/deskripsi"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_fasilitas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Fasilitas"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_info_Kegiatan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Kegiatan"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_Ulasan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Ulasan"
+                android:textSize="14sp" />
+        </LinearLayout>
 
         <TextView
-            android:id="@+id/tv_deskripsi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/deskripsi"
+            android:id="@+id/tv_info6"
+            android:layout_width="match_parent"
+            android:layout_height="143dp"
+            android:layout_margin="15dp"
+            android:text="Fasilitas Masjid Istiqlal termasuk yang terbaik di Indonesia. Untuk fasilitas utamanya, yaitu ruang salat, tersedia tempat yang lega, bersih, dan sejuk. Langit-langit Istiqlal yang tinggi membuat masjid ini selalu sejuk, meskipun di tengah hari yang panas.."
             android:textSize="14sp" />
 
         <TextView
-            android:id="@+id/tv_fasilitas"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Fasilitas"
-            android:textStyle="bold"
-            android:textSize="14sp" />
+            android:id="@+id/tv_buttonfasilitas"
+            android:layout_width="206dp"
+            android:layout_height="55dp"
+            android:background="@drawable/button_info"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="Lihat Di Map"
+            android:textSize="14sp"
+            android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/tv_info_Kegiatan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Kegiatan"
-            android:textSize="14sp" />
-
-        <TextView
-            android:id="@+id/tv_Ulasan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Ulasan"
-            android:textSize="14sp" />
     </LinearLayout>
-
-    <TextView
-        android:id="@+id/tv_info6"
-        android:layout_width="383dp"
-        android:layout_height="143dp"
-        android:text="Fasilitas Masjid Istiqlal termasuk yang terbaik di Indonesia. Untuk fasilitas utamanya, yaitu ruang salat, tersedia tempat yang lega, bersih, dan sejuk. Langit-langit Istiqlal yang tinggi membuat masjid ini selalu sejuk, meskipun di tengah hari yang panas.."
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.571"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
-        app:layout_constraintVertical_bias="0.074"
-        tools:ignore="MissingConstraints" />"
-
-    <TextView
-        android:id="@+id/tv_buttonfasilitas"
-        android:layout_width="206dp"
-        android:layout_height="55dp"
-        android:background="@drawable/button_info"
-        android:gravity="center"
-        android:text="Lihat Di Map"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_info6" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

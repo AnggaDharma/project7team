@@ -6,12 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".Ulasan">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".InfoMasjid"
-        tools:ignore="ExtraText">
-
         <ImageView
             android:id="@+id/img_info1"
             android:layout_width="416dp"
@@ -22,169 +16,155 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="MissingConstraints" />
+            app:layout_constraintStart_toStartOf="parent" />
 
         <LinearLayout
-            android:id="@+id/linearLayout2"
-            android:layout_width="407dp"
-            android:layout_height="38dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="4dp"
-            android:orientation="horizontal"
-            android:padding="10dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@+id/img_info1"
-            tools:ignore="MissingConstraints">
+            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/tv_deskripsi"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_deskripsi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/deskripsi"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_fasilitas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Fasilitas"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_info_Kegiatan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Kegiatan"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_Ulasan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Ulasan"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="213dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
                 android:layout_weight="1"
-                android:text="@string/deskripsi"
-                android:textSize="14sp" />
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_info6"
+                    android:layout_width="78dp"
+                    android:layout_height="match_parent"
+                    android:text="4,8 (514)"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/star" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_1"
+                android:layout_width="346dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:text="Sangat Bagus" />
+
+                <TextView
+                    android:layout_width="211dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/switch_button" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_2"
+                android:layout_width="346dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:text="Bagus" />
+
+                <TextView
+                    android:layout_width="172dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/switch_button" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ly_3"
+                android:layout_marginTop="24dp"
+                android:layout_width="346dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="125dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:text="Buruk" />
+
+                <TextView
+                    android:layout_width="109dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/switch_button" />
+            </LinearLayout>
 
             <TextView
-                android:id="@+id/tv_fasilitas"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Fasilitas"
-                android:textSize="14sp"/>
-
-
-            <TextView
-                android:id="@+id/tv_info_Kegiatan"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Kegiatan"
-                android:textSize="14sp" />
-
-            <TextView
-                android:id="@+id/tv_Ulasan"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Ulasan"
-                android:textStyle="bold"
-                android:textSize="14sp" />
-
+                android:id="@+id/tv_buttonulasan"
+                android:layout_width="210dp"
+                android:layout_height="36dp"
+                android:background="@drawable/button_info"
+                android:gravity="center"
+                android:layout_marginTop="60dp"
+                android:layout_gravity="center"
+                android:text="Beri Ulasan"
+                android:textSize="17sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/tv_buttonulasan"
-            android:layout_width="210dp"
-            android:layout_height="36dp"
-            android:background="@drawable/button_info"
-            android:gravity="center"
-            android:text="Beri Ulasan"
-            android:textSize="17sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ly_3"
-            app:layout_constraintVertical_bias="0.569" />
-
-        <LinearLayout
-            android:id="@+id/linearLayout5"
-            android:layout_width="213dp"
-            android:layout_height="42dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
-
-            <TextView
-                android:id="@+id/tv_info6"
-                android:layout_width="78dp"
-                android:layout_height="match_parent"
-                android:text="4,8 (514)"
-                android:textSize="14sp"
-                android:textStyle="bold"
-                tools:ignore="MissingConstraints" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/star" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/ly_1"
-            android:layout_width="348dp"
-            android:layout_height="26dp"
-            android:layout_marginTop="24dp"
-            android:orientation="horizontal"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="9dp">
-
-            <TextView
-                android:layout_width="125dp"
-                android:layout_height="match_parent"
-                android:layout_marginStart="5dp"
-                android:text="Sangat Bagus" />
-
-            <TextView
-                android:layout_width="211dp"
-                android:layout_height="match_parent"
-                android:background="@drawable/switch_button" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/ly_2"
-            android:layout_width="348dp"
-            android:layout_height="26dp"
-            android:layout_marginTop="24dp"
-            android:orientation="horizontal"
-            app:layout_constraintTop_toBottomOf="@+id/ly_1"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="9dp">
-
-            <TextView
-                android:layout_width="125dp"
-                android:layout_height="match_parent"
-                android:layout_marginStart="5dp"
-                android:text="Bagus" />
-
-            <TextView
-                android:layout_width="172dp"
-                android:layout_height="match_parent"
-                android:background="@drawable/switch_button" />
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/ly_3"
-            android:layout_width="348dp"
-            android:layout_height="26dp"
-            android:layout_marginTop="24dp"
-            android:orientation="horizontal"
-            app:layout_constraintTop_toBottomOf="@+id/ly_2"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="9dp">
-
-            <TextView
-                android:layout_width="125dp"
-                android:layout_height="match_parent"
-                android:layout_marginStart="5dp"
-                android:text="Buruk" />
-
-            <TextView
-                android:layout_width="109dp"
-                android:layout_height="match_parent"
-                android:background="@drawable/switch_button" />
-
-
-        </LinearLayout>
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

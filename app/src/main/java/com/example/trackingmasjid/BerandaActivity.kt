@@ -76,7 +76,13 @@ class BerandaActivity : AppCompatActivity() {
         }
 
         Log.d("ISI DATANYA ",dataList.toString())
-        adapterKeren = RvMasjidAdapter(dataList)
+        adapterKeren = RvMasjidAdapter(dataList) { selectedMasjid ->
+            val intent = Intent(this@BerandaActivity, InfoMasjid::class.java)
+            intent.putExtra("masjidName", selectedMasjid.name)
+            intent.putExtra("jarak", selectedMasjid.desc)
+            startActivity(intent)
+        }
+
         binding.rvExample.adapter = adapterKeren
 
     }

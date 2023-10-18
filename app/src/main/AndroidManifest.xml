@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,13 +17,7 @@
         android:theme="@style/Theme.TrackingMasjid"
         tools:targetApi="31">
         <activity
-            android:name=".FavoritQuranActivity"
-            android:exported="false" />
-        <activity
-            android:name=".JuzActivity"
-            android:exported="false" />
-        <activity
-            android:name=".SplashScreen"
+            android:name=".MasjidActivity"
             android:exported="false" />
         <activity
             android:name=".EditProfilActivity"
@@ -28,7 +26,7 @@
             android:name=".DonasiActivity"
             android:exported="false" />
         <activity
-            android:name=".ZakatActivity"
+            android:name=".BerandaActivity"
             android:exported="false" />
         <activity
             android:name=".ZakatProfesiActivity"
@@ -43,7 +41,7 @@
             android:name=".Ulasan"
             android:exported="false" />
         <activity
-            android:name=".Al_QuranActivity"
+            android:name=".InfoMasjid"
             android:exported="false" />
         <activity
             android:name=".Fasilitas"
@@ -58,7 +56,7 @@
             android:name=".AlarmActivity"
             android:exported="false" />
         <activity
-            android:name=".ProfilActivity"
+            android:name=".LoginActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
@@ -67,13 +65,13 @@
             android:name=".TasbihActivity"
             android:exported="false" />
         <activity
-            android:name=".InfoMasjid"
+            android:name=".ProfilActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".ZakatActivity"
             android:exported="false" />
         <activity
-            android:name=".BerandaActivity"
+            android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -81,6 +79,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="YOUR API KEY" />
     </application>
 
 </manifest>
