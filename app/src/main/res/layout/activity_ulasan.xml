@@ -72,14 +72,6 @@
                 android:textStyle="bold"
                 android:textSize="14sp" />
 
-            <TextView
-                android:id="@+id/tv_Donasi"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Donasi"
-                android:textSize="14sp" />
-
         </LinearLayout>
 
         <TextView

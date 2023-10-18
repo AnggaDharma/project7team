@@ -45,6 +45,13 @@ class BerandaActivity : AppCompatActivity() {
             val intent = Intent(this@BerandaActivity, TasbihActivity::class.java)
             startActivity(intent)
         }
+        val alquranView = findViewById<ImageView>(R.id.alquran)
+        alquranView.setOnClickListener {
+            val intent = Intent(this@BerandaActivity, Al_QuranActivity::class.java)
+            startActivity(intent)
+        }
+
+
 
         init()
         setRvAdapter()
