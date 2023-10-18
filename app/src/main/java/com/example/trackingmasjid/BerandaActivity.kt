@@ -40,6 +40,12 @@ class BerandaActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val tasbihview = findViewById<ImageView>(R.id.tasbih)
+        tasbihview.setOnClickListener {
+            val intent = Intent(this@BerandaActivity, TasbihActivity::class.java)
+            startActivity(intent)
+        }
+
         init()
         setRvAdapter()
     }

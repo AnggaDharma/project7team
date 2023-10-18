@@ -55,6 +55,7 @@
             android:layout_margin="10dp"
             android:background="@drawable/switch_tumbs"
             android:hint="Orang"
+            android:inputType="number"
             android:padding="10dp"
             android:textSize="20sp" />
 
@@ -73,6 +74,7 @@
             android:layout_margin="10dp"
             android:background="@drawable/switch_tumbs"
             android:hint="Rp."
+            android:layout_below="@+id/ed_zakat_Fitrah1"
             android:padding="10dp"
             android:textSize="20sp" />
 
@@ -85,12 +87,14 @@
                 android:id="@+id/checkBox2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/ed_zakat_Fitrah2"
                 android:text="/Liter" />
 
             <CheckBox
                 android:id="@+id/checkBox1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@id/checkBox2"
                 android:text="/Kg" />
         </LinearLayout>
 
@@ -99,9 +103,11 @@
             android:layout_width="165dp"
             android:layout_height="53dp"
             android:gravity="center"
+            android:layout_below="@id/checkBox1"
             android:text="Hitung"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:onClick="hitungZakat"/>
 
         <TextView
             android:id="@+id/tv_zakat_Fitrah4"
@@ -116,10 +122,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
+            android:layout_below="@id/btn_hitung"
             android:background="@drawable/switch_tumbs"
             android:hint="Rp."
             android:padding="10dp"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:inputType="none"
+            android:focusable="false"
+            android:clickable="false"
+            android:longClickable="false"
+            android:contextClickable="false"/>
     </LinearLayout>
 
 

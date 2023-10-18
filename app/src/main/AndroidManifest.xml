@@ -55,13 +55,16 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".SplashScreen"
+            android:name=".TasbihActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilActivity"
             android:exported="false" />
         <activity
             android:name=".ZakatActivity"
             android:exported="false" />
         <activity
-            android:name=".ProfilActivity"
+            android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
