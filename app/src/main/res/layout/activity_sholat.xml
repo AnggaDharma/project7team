@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bcgron_msjd"
+    tools:context=".activity_sholat">
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Wednessday 27 Augus 2023"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView13"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.518"
+        tools:layout_editor_absoluteX="111dp"
+        tools:ignore="MissingConstraints" />
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="46dp"
+        android:layout_height="20dp"
+        app:srcCompat="@drawable/angle_small_left"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="41dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="46dp"
+        android:layout_height="20dp"
+        app:srcCompat="@drawable/angle_small_right"
+        tools:layout_editor_absoluteX="300dp"
+        tools:layout_editor_absoluteY="41dp"
+        tools:ignore="MissingConstraints" />
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="316dp"
+        android:layout_height="399dp"
+        android:src="@drawable/bcgron_sholat"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="99dp"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subuh"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="111dp"
+        tools:layout_editor_absoluteY="162dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="04:20"
+        android:textSize="20dp"
+        android:textStyle="normal|bold"
+        tools:layout_editor_absoluteX="249dp"
+        tools:layout_editor_absoluteY="162dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="05:37"
+        android:textSize="20dp"
+        android:textStyle="normal|bold"
+        app:layout_constraintTop_toBottomOf="@+id/textView26"
+        tools:layout_editor_absoluteX="249dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Dzuhur"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/textView27"
+        tools:layout_editor_absoluteX="111dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="11:45"
+        android:textSize="20dp"
+        android:textStyle="normal|bold"
+        app:layout_constraintTop_toBottomOf="@+id/textView28"
+        tools:layout_editor_absoluteX="249dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Ashar"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/textView29"
+        tools:layout_editor_absoluteX="111dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="14:48"
+        android:textSize="20dp"
+        android:textStyle="normal|bold"
+        app:layout_constraintTop_toBottomOf="@+id/textView30"
+        tools:layout_editor_absoluteX="249dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Maghrib"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/textView31"
+        tools:layout_editor_absoluteX="111dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="17:47"
+        android:textSize="20dp"
+        android:textStyle="normal|bold"
+        app:layout_constraintTop_toBottomOf="@+id/textView32"
+        tools:layout_editor_absoluteX="249dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Isya"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/textView33"
+        tools:layout_editor_absoluteX="111dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="18:58"
+        android:textSize="20dp"
+        android:textStyle="normal|bold"
+        app:layout_constraintTop_toBottomOf="@+id/textView34"
+        tools:layout_editor_absoluteX="249dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Terbit"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/textView25"
+        tools:layout_editor_absoluteX="115dp"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

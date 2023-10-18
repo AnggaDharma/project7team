@@ -53,9 +53,10 @@
         android:src="@drawable/maps"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ed_hp"
-        app:layout_constraintVertical_bias="0.446" />
+        app:layout_constraintVertical_bias="0.525" />
 
     <ImageView
         android:id="@+id/img_hp2"
