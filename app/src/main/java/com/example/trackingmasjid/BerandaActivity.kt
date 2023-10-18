@@ -22,6 +22,12 @@ class BerandaActivity : AppCompatActivity() {
         binding = ActivityBerandaBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val masjidview = findViewById<ImageView>(R.id.masjid)
+        masjidview.setOnClickListener {
+            val intent = Intent(this@BerandaActivity, MasjidActivity::class.java)
+            startActivity(intent)
+        }
+
         val zakatview = findViewById<ImageView>(R.id.iconzakat)
         zakatview.setOnClickListener {
             val intent = Intent(this@BerandaActivity, ZakatActivity::class.java)
