@@ -135,11 +135,11 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/Btn_Simpan"
+        android:id="@+id/save_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="112dp"
-        android:text="Simpan"
+        android:text="@string/simpan"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
