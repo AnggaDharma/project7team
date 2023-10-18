@@ -51,6 +51,15 @@
             android:name=".MapsActivity"
             android:exported="false" />
         <activity
+            android:name=".MasjidActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfilActivity"
+            android:exported="false" />
+        <activity
             android:name=".Hasil_Pencarian"
             android:exported="false" />
         <activity
@@ -61,6 +70,33 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity_detail_donasi"
+            android:exported="false" />
+        <activity
+            android:name=".activity_metode_pembayaran"
+            android:exported="false" />
+        <activity
+            android:name=".activity_nominal"
+            android:exported="false" />
+        <activity
+            android:name=".activity_pembayaran_berhasil"
+            android:exported="false" />
+        <activity
+            android:name=".activity_kalender"
+            android:exported="false" />
+        <activity
+            android:name=".activity_sholat"
+            android:exported="false" />
+        <activity
+            android:name=".Al_QuranActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JuzActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FavoritQuranActivity"
             android:exported="false" />
         <activity
             android:name=".DonasiActivity"

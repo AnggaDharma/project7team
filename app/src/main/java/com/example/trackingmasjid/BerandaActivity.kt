@@ -3,11 +3,9 @@ package com.example.trackingmasjid
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.content.res.TypedArray
 import android.util.Log
 import android.widget.EditText
 import android.widget.ImageView
-import android.widget.LinearLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.trackingmasjid.Adapter.RvMasjidAdapter
 import com.example.trackingmasjid.databinding.ActivityBerandaBinding
@@ -42,7 +40,13 @@ class BerandaActivity : AppCompatActivity() {
 
         val search = findViewById<EditText>(R.id.editTextSearch)
         search.setOnClickListener {
-            val intent = Intent(this@BerandaActivity, MapsActivity::class.java)
+            val intent = Intent(this@BerandaActivity, mapgambarActivity::class.java)
+            startActivity(intent)
+        }
+
+        val kalenderview = findViewById<ImageView>(R.id.kalender)
+        kalenderview.setOnClickListener {
+            val intent = Intent(this@BerandaActivity, activity_kalender::class.java)
             startActivity(intent)
         }
 
@@ -63,7 +67,11 @@ class BerandaActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-
+        val shalat = findViewById<ImageView>(R.id.shalat)
+        shalat.setOnClickListener {
+            val intent = Intent(this@BerandaActivity, AlarmActivity::class.java)
+            startActivity(intent)
+        }
 
         init()
         setRvAdapter()
