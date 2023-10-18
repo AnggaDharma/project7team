@@ -30,6 +30,9 @@
             android:name=".BerandaActivity"
             android:exported="false" />
         <activity
+            android:name=".mapgambarActivity"
+            android:exported="false" />
+        <activity
             android:name=".ZakatProfesiActivity"
             android:exported="false" />
         <activity
